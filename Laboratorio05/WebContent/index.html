@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<title>My Angular App</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="/js/app.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+</head>
+<body ng-controller="myController")>
+	<h1>Resultado</h1>
+	{{resultado}}
+	<br />
+	<button ng-click="aleatorio()">Refrescar</button>
+	<br />
+	<p>
+		La mitad del valor de test <span ng-bind="mitadValor"></span>
+	</p>
+	<p>
+		La mitad del valor de test INICIAL es <span>{{ ::mitadValor}}</span>
+	</p>
+
+	<p ng-class="{'estilo1':entero % 2 == 0, 'estilo2': entero % 2 == 1 }">
+		La mitad del valor de test INICIAL es <span>{{ ::mitadValor}}</span>
+	</p>
+
+
+
+	<ul>
+		<li ng-repeat="h in historial">{{h.indice}} : {{h.valor}}</li>
+	</ul>
+</body>
+</html>
