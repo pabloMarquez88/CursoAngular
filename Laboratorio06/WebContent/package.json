@@ -1,0 +1,14 @@
+{
+  "name": "laboratorio06",
+  "version": "1.0.0",
+  "description": "creadoConNPMinit",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
