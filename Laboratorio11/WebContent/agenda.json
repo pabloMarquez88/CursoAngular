@@ -1,0 +1,51 @@
+{
+  "agenda": [
+    {
+      "propietario": "yyyyyy",
+      "id": 1
+    },
+    [
+      {
+        "propietario": "ggggggg",
+        "id": 1
+      }
+    ],
+    [
+      {
+        "propietario": "ggggggg",
+        "id": 1
+      },
+      [
+        {
+          "propietario": "ggggggg",
+          "id": 1
+        }
+      ]
+    ],
+    [
+      {
+        "propietario": "ggggggg",
+        "id": 1
+      },
+      [
+        {
+          "propietario": "ggggggg",
+          "id": 1
+        }
+      ],
+      [
+        {
+          "propietario": "ggggggg",
+          "id": 1
+        },
+        [
+          {
+            "propietario": "ggggggg",
+            "id": 1
+          }
+        ]
+      ]
+    ]
+  ],
+  "tareas": []
+}

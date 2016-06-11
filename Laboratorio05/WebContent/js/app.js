@@ -1,28 +1,29 @@
-angular.module("myApp", []).controller("myController",
-		[ '$scope', function($scope) {
-			$scope.resultado = 5 + 4;
-			hacerCalculos($scope);
+angular.module('myApp', []);
 
-			$scope.indice = 1;
-			$scope.historial = [ {
-				valor : $scope.mitadValor,
-				indice : $scope.indice
-			} ];
+angular.module('myApp').controller('elControlador', [ '$scope', function($scope) {
+	$scope.resultado = 5 + 4;
+	hacerCalculos($scope);
 
-			$scope.aleatorio = function() {
-				$scope.resultado += Math.random();
-				hacerCalculos($scope);
+	$scope.indice = 1;
+	$scope.historial = [ {
+		valor : $scope.mitadValor,
+		indice : $scope.indice
+	} ];
 
-				$scope.historial.push({
-					valor : $scope.mitadValor,
-					indice : $scope.indice
-				});
-				$scope.indice = $scope.indice + 1;
-				console.log($scope.historial);
+	$scope.aleatorio = function() {
+		$scope.resultado += Math.random();
+		hacerCalculos($scope);
 
-			};
+		$scope.historial.push({
+			valor : $scope.mitadValor,
+			indice : $scope.indice
+		});
+		$scope.indice = $scope.indice + 1;
+		console.log($scope.historial);
 
-		} ]);
+	};
+
+} ]);
 
 function hacerCalculos(scope) {
 	scope.entero = Math.floor(scope.resultado);

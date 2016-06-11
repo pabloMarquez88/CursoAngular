@@ -1,0 +1,13 @@
+<h1>{{titulo}}</h1>
+<ul id="listaTareas">
+	<li data-ng-repeat="tarea in agenda.tareas">
+		<span>
+			<a data-ng-click="seleccionar(tarea)"> {{tarea.titulo}}</a>
+		</span>
+		<span>{{tarea.fecha}}</span>
+		<span>{{tarea.duracion}}</span>
+		<span>{{tarea.prioridad}}</span>
+		<span>{{tarea.categoria}}</span>
+		<span>{{tarea.mail}}</span>
+	</li>
+</ul>
